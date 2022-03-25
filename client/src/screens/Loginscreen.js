@@ -58,6 +58,8 @@ function Loginscreen() {
             <button className="btn btn-primary mt-3" onClick={login}>
               Login
             </button>
+            <p>username:test@gmail.com</p>
+            <p>password:123456</p>
           </div>
         </div>
       </div>

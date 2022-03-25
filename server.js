@@ -11,10 +11,18 @@ const usersRoute = require("./routes/usersRoute");
 const bookingsRoute = require("./routes/bookingsRoute");
 
 app.use(express.json());
+const cors = require("cors");
 
 app.use("/api/rooms", roomsRoute);
 app.use("/api/users", usersRoute);
 app.use("/api/bookings", bookingsRoute);
+
+app.use(
+    cors({
+      origin: "*",
+      credentials: true,
+    })
+  );
 
 const port = process.env.PORT || 5000;
 

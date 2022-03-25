@@ -3,6 +3,8 @@ import axios from "axios";
 import Loader from "../components/Loader";
 import Error from "../components/Error";
 import Success from "../components/Success";
+import { Link } from "react-router-dom";
+
 
 function Registerscreen() {
   const [name, setname] = useState("");
@@ -81,8 +83,9 @@ function Registerscreen() {
               }}
             />
             <button className="btn btn-primary mt-3" onClick={register}>
-              Register
+             <Link to='/login'>Register</Link> 
             </button>
+            <Link to='/login' className='mt-3 ml-3'>Already Registered ? Click here</Link>
           </div>
         </div>
       </div>
