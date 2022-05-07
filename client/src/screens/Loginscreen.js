@@ -60,6 +60,8 @@ function Loginscreen() {
             </button>
             <p>username:test@gmail.com</p>
             <p>password:123456</p>
+            <p> admin username:test@gmail.com</p>
+            <p> admin password:123456</p>
           </div>
         </div>
       </div>
